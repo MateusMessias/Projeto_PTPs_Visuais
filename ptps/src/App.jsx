@@ -3,6 +3,9 @@ import { FormProvider, useForm } from "react-hook-form";
 import { Box, Button, Checkbox, FormControlLabel, Grid, Paper, Radio, RadioGroup, ThemeProvider, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 
+//Images
+import LogoTech from './images/Arquivos Logo TechCN/V04_DERIVACAO_COLORIDA+PRETO.png';
+
 //Style
 import theme from './style/index'
 
@@ -31,6 +34,9 @@ function App() {
         <ThemeProvider theme={theme}>
         <div className="app">
             <Container>
+                <Box display='flex'>
+                    <img src={LogoTech} alt="Logo Tech" style={{ width: '15%' }}/>
+                </Box>
                 <Grid item sm={12} xs={12} display='flex' justifyContent={'center'}>
                     <Box mt={2} mb={2}>
                         <Typography variant="h2">
@@ -77,6 +83,40 @@ function App() {
                                                 <FormControlLabel {...register('molde2')} value="ok" control={<Radio />} label="OK" />
                                                 <FormControlLabel {...register('molde2')} value="não OK" control={<Radio />} label="Não OK" />
                                                 <FormControlLabel {...register('molde2')} value="0" control={<Radio />} label="Molde Desativado" />
+                                            </RadioGroup>
+                                        </Paper>
+                                    </Box>
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <Box mt={5}>
+                                        <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 3</Typography>
+                                            <RadioGroup
+                                                row
+                                                name="molde3"
+                                                defaultValue="0"
+                                                
+                                            >
+                                                <FormControlLabel {...register('molde3')} value="ok" control={<Radio />} label="OK" />
+                                                <FormControlLabel {...register('molde3')} value="não OK" control={<Radio />} label="Não OK" />
+                                                <FormControlLabel {...register('molde3')} value="0" control={<Radio />} label="Molde Desativado" />
+                                            </RadioGroup>
+                                        </Paper>
+                                    </Box>
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <Box mt={5}>
+                                        <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 4</Typography>
+                                            <RadioGroup
+                                                row
+                                                name="molde4"
+                                                defaultValue="0"
+                                                
+                                            >
+                                                <FormControlLabel {...register('molde4')} value="ok" control={<Radio />} label="OK" />
+                                                <FormControlLabel {...register('molde4')} value="não OK" control={<Radio />} label="Não OK" />
+                                                <FormControlLabel {...register('molde4')} value="0" control={<Radio />} label="Molde Desativado" />
                                             </RadioGroup>
                                         </Paper>
                                     </Box>
