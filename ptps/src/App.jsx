@@ -217,46 +217,13 @@ function App() {
                                                 <FormControlLabel {...register('molde10')} value="ok" control={<Radio />} label="OK" />
                                                 <FormControlLabel {...register('molde10')} value="não OK" control={<Radio />} label="Não OK" />
                                                 <FormControlLabel {...register('molde10')} value="0" control={<Radio />} label="Molde Desativado" />
-                                            </RadioGroup>
-                                        </Paper>
-                                    </Box>
-                                </Grid><Grid item xs={12}>
-                                    <Box mt={5}>
-                                        <Paper elevation={3} style={{ padding: '10px' }}>
-                                            <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 11</Typography>
-                                            <RadioGroup
-                                                row
-                                                name="molde11"
-                                                defaultValue="0"
-                                                
-                                            >
-                                                <FormControlLabel {...register('molde11')} value="ok" control={<Radio />} label="OK" />
-                                                <FormControlLabel {...register('molde11')} value="não OK" control={<Radio />} label="Não OK" />
-                                                <FormControlLabel {...register('molde11')} value="0" control={<Radio />} label="Molde Desativado" />
-                                            </RadioGroup>
-                                        </Paper>
-                                    </Box>
-                                </Grid>
-                                <Grid item xs={12}>
-                                    <Box mt={5}>
-                                        <Paper elevation={3} style={{ padding: '10px' }}>
-                                            <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 12</Typography>
-                                            <RadioGroup
-                                                row
-                                                name="molde12"
-                                                defaultValue="0"
-                                                
-                                            >
-                                                <FormControlLabel {...register('molde12')} value="ok" control={<Radio />} label="OK" />
-                                                <FormControlLabel {...register('molde12')} value="não OK" control={<Radio />} label="Não OK" />
-                                                <FormControlLabel {...register('molde12')} value="0" control={<Radio />} label="Molde Desativado" />
-                                            </RadioGroup>
-                                        </Paper>
-                                    </Box>
-                                </Grid>                               
-                            </>
-                        : 
-                            <>
+                                                </RadioGroup>
+                                                </Paper>
+                                            </Box>
+                                        </Grid>
+                                    </>
+                                :
+                                <>
                                 <Grid item xs={12}>
                                     <Box mt={2}>
                                         <FormControlLabel value={produto} control={
