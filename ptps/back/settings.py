@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'rhtech.urls'
+ROOT_URLCONF = 'ptp.urls'
 
 TEMPLATES = [
     {
@@ -67,7 +67,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'rhtech.wsgi.application'
+WSGI_APPLICATION = 'ptp.wsgi.application'
 
 
 # Database
