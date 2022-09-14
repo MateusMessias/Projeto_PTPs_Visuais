@@ -13,9 +13,8 @@ client.connect(broker_address, broker_port)
 
 # escrita da mensagem
 msg = {
-        'teamperatura_de_passagem': '53.2',
-        'lote': 20220908,
-        'pais': 'Chile'
+        'peso_ombro_l561_molde1': '53.2',
+
  }
 
 # encapsulando num objeto JSON
