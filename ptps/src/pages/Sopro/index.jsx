@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import { FormProvider, useForm } from "react-hook-form";
-import { Box, Button, Checkbox, FormControlLabel, Grid, Paper, Radio, 
-    RadioGroup, Typography 
-} from "@mui/material";
+import { FormControlLabel, Grid, Radio, RadioGroup } from "@mui/material";
 import AspectoVisual from "../../components/AspectoVisual";
 import Header from "../../components/Header";
 
