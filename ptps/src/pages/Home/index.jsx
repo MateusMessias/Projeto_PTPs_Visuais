@@ -14,7 +14,7 @@ function Home() {
             >
                 <Box mt={2} mb={2}> 
                     <Typography variant="h2">
-                        Bem Vindo, selecione a opção que deseja utilizar
+                        Bem Vindo, selecione o equipamento desejado
                     </Typography>
                 </Box>
             </Grid>
