@@ -1,20 +1,14 @@
 import React from "react";
 import { Box, Grid, Link, Typography } from "@mui/material";
+import Header from "../../components/Header";
 
-//Images
-import LogoTech from '../../images/Arquivos Logo TechCN/V04_DERIVACAO_COLORIDA+PRETO.png';
+
 
 function Home() {
 
     return (
         <>
-            <Grid item xs={2} style={{ display: 'flex', alignItems: 'center', 
-                justifyContent: 'center' }}
-            >
-                <Box display='flex'>
-                    <img src={LogoTech} alt="Logo Tech" style={{ width: '70%' }}/>
-                </Box>
-            </Grid>
+           <Header />
             <Grid item xs={10} style={{ display: 'flex', alignItems: 'center', 
                 justifyContent: 'center' }}
             >
