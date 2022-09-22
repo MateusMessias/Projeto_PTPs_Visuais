@@ -38,7 +38,7 @@ function AspectoVisual() {
                 </Box>
             </Grid>
             <FormProvider {...methods}>
-                <form onSubmit={handleSubmit(onSubmit)} style={{ width: '100%' }}>
+                <form onSubmit={handleSubmit(onSubmit)} style={{ width: '70%' }}>
                     {linha === '561' ? 
                         <>
                             <Grid item sm={12} xs={12} md={12}>
