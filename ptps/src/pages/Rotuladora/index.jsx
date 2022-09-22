@@ -3,7 +3,7 @@ import { FormProvider, useForm } from "react-hook-form";
 import { Box, Button, Checkbox, FormControlLabel, Grid, Paper, Radio, 
     RadioGroup, Typography 
 } from "@mui/material";
-import Header from "../../components/Header";
+import Menu from "../../components/Menu";
 
 function Rotuladora() {
 
@@ -28,12 +28,14 @@ function Rotuladora() {
 
     return (
         <>
-            <Header/>
+            <Menu/>
             <Grid item sm={12} xs={12} display='flex' justifyContent={'center'}>
-                    <RadioGroup row defaultValue={linha} onChange={(e) => setLinha(e.target.value)}>
-                        <FormControlLabel value={linha && '561'} control={<Radio />} label="Linha 561" />
-                        <FormControlLabel value={linha && '562'} control={<Radio />} label="Linha 562" />
-                    </RadioGroup>
+                    <Box mt={45}>
+                        <RadioGroup row defaultValue={linha} onChange={(e) => setLinha(e.target.value)}>
+                            <FormControlLabel value={linha && '561'} control={<Radio />} label="Linha 561" />
+                            <FormControlLabel value={linha && '562'} control={<Radio />} label="Linha 562" />
+                        </RadioGroup>
+                    </Box>
                 </Grid>
                 <FormProvider {...methods}>
                     <form onSubmit={handleSubmit(onSubmit)} style={{ width: '100%' }}>

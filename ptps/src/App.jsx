@@ -13,11 +13,9 @@ function App() {
     return (
         <ThemeProvider theme={theme}>
         <div className="app">
-            <Container>
-                <Grid container justifyContent="center">
-                    <Routes />
-                </Grid>
-            </Container>
+            <Grid container justifyContent="center">
+                <Routes />
+            </Grid>
         </div>
         </ThemeProvider>
     );

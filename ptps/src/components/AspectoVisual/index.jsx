@@ -3,6 +3,7 @@ import { FormProvider, useForm } from "react-hook-form";
 import { Box, Button, Checkbox, FormControlLabel, Grid, Paper, Radio, 
     RadioGroup, Typography 
 } from "@mui/material";
+import Menu from "../Menu";
 
 
 function AspectoVisual() {
@@ -27,7 +28,7 @@ function AspectoVisual() {
     }
 
     return (
-        <>
+        <>  
             <Grid item sm={12} xs={12} display='flex' justifyContent={'center'}>
                 <Box mt={4}>
                     <RadioGroup row defaultValue={linha} onChange={(e) => setLinha(e.target.value)}>

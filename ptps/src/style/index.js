@@ -6,6 +6,9 @@ export default createTheme({
         primary	: {
             main : '#2D2A26',
         },
+        secondary : {
+            main : '#dedede'
+        }
     },
     typography : {
         fontFamily : '"Roboto", sans-serif',

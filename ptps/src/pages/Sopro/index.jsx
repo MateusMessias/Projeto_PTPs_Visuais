@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { FormControlLabel, Grid, Radio, RadioGroup } from "@mui/material";
+import { Box, FormControlLabel, Grid, Radio, RadioGroup } from "@mui/material";
 import AspectoVisual from "../../components/AspectoVisual";
-import Header from "../../components/Header";
+import Menu from "../../components/Menu";
 
 
 function Sopro() {
@@ -11,14 +11,16 @@ function Sopro() {
     
     return (
         <>  
-            <Header/>
+            <Menu/>
             <Grid item sm={12} xs={12} display='flex' justifyContent={'center'}>
-                <RadioGroup row defaultValue={services} onChange={(e) => setServices(e.target.value)}>
-                    <FormControlLabel value={services && 'aspectoVisual'} control={<Radio />} label="Aspecto Visual" />
-                    <FormControlLabel value={services && 'espessura'} control={<Radio />} label="Espessura" />
-                    <FormControlLabel value={services && 'explosao'} control={<Radio />} label="Explosão" />
-                    <FormControlLabel value={services && 'peso'} control={<Radio />} label="Peso" />
-                </RadioGroup>
+                <Box mt={40}>
+                    <RadioGroup row defaultValue={services} onChange={(e) => setServices(e.target.value)}>
+                        <FormControlLabel value={services && 'aspectoVisual'} control={<Radio />} label="Aspecto Visual" />
+                        <FormControlLabel value={services && 'espessura'} control={<Radio />} label="Espessura" />
+                        <FormControlLabel value={services && 'explosao'} control={<Radio />} label="Explosão" />
+                        <FormControlLabel value={services && 'peso'} control={<Radio />} label="Peso" />
+                    </RadioGroup>
+                </Box>
             </Grid>  
            
             { services === 'aspectoVisual' &&  <AspectoVisual />}
