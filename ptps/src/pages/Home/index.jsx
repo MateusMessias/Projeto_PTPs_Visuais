@@ -10,7 +10,7 @@ function Home() {
     return (
         <>  
             <Menu/>
-            <Header />
+            
             <Container>
                 <Grid item xs={10} style={{ display: 'flex', alignItems: 'center', 
                     justifyContent: 'center' }}
