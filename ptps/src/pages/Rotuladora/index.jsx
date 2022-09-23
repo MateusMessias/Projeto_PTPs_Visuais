@@ -203,8 +203,8 @@ function Rotuladora() {
                                     </>
                                 }
                         <Box mt={5} display='flex' justifyContent='end'>
-                        <Button type="submit" color="primary" variant="contained" title="Salvar">
-                            Salvar
+                        <Button type="submit" color="primary" variant="contained" title="Enviar">
+                            Enviar
                         </Button>
                         </Box>
                     </form>
