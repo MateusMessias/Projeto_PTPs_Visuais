@@ -1,27 +1,17 @@
 import React from "react";
-import { Box, Container, Grid, Link, Typography } from "@mui/material";
-import Header from "../../components/Header";
-import Menu from "../../components/Menu";
-
-
+import { Box, Grid, Typography } from "@mui/material";
 
 function Home() {
 
     return (
-        <>  
-            <Menu/>
-            <Header />
-            <Container>
-                <Grid item xs={10} style={{ display: 'flex', alignItems: 'center', 
-                    justifyContent: 'center' }}
-                >
-                    <Box mt={2} mb={2}> 
-                        <Typography variant="h2">
-                            Bem Vindo, selecione o equipamento desejado
-                        </Typography>
-                    </Box>
-                </Grid>
-            </Container>
+        <>
+            <Grid item xs={12} justifyContent='center'>
+                <Box mt={40} mb={2} display='flex' justifyContent='center'> 
+                    <Typography variant="h2">
+                        Bem-Vindo ao Sistema de Coletas Curitibana
+                    </Typography>
+                </Box>
+            </Grid>
         </>
     );
 }

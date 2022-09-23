@@ -3,10 +3,12 @@ import { FormProvider, useForm } from "react-hook-form";
 import { Box, Button, Checkbox, FormControlLabel, Grid, Paper, Radio, 
     RadioGroup, Typography 
 } from "@mui/material";
-import Menu from "../Menu";
 
+import useStyles from './styles';
 
 function AspectoVisual() {
+    
+    const classes = useStyles();
 
     const methods = useForm();
 
@@ -38,12 +40,12 @@ function AspectoVisual() {
                 </Box>
             </Grid>
             <FormProvider {...methods}>
-                <form onSubmit={handleSubmit(onSubmit)} style={{ width: '70%' }}>
+                <form onSubmit={handleSubmit(onSubmit)} style={{ width: '100%' }}>
                     {linha === '561' ? 
                         <>
                             <Grid item sm={12} xs={12} md={12}>
                                 <Box mt={2}>
-                                    <Paper elevation={3} style={{ padding: '10px' }}>
+                                    <Paper elevation={3} className={classes.paper}>
                                         <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 1</Typography>
                                         <RadioGroup
                                             row
@@ -59,7 +61,7 @@ function AspectoVisual() {
                             </Grid>
                             <Grid item xs={12}>
                                 <Box mt={5}>
-                                    <Paper elevation={3} style={{ padding: '10px' }}>
+                                    <Paper elevation={3} className={classes.paper}>
                                         <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 2</Typography>
                                         <RadioGroup
                                             row
@@ -76,7 +78,7 @@ function AspectoVisual() {
                             </Grid>
                             <Grid item xs={12}>
                                 <Box mt={5}>
-                                    <Paper elevation={3} style={{ padding: '10px' }}>
+                                    <Paper elevation={3} className={classes.paper}>
                                         <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 3</Typography>
                                         <RadioGroup
                                             row
@@ -93,7 +95,7 @@ function AspectoVisual() {
                             </Grid>
                             <Grid item xs={12}>
                                 <Box mt={5}>
-                                    <Paper elevation={3} style={{ padding: '10px' }}>
+                                    <Paper elevation={3} className={classes.paper}>
                                         <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 4</Typography>
                                         <RadioGroup
                                             row
@@ -110,7 +112,7 @@ function AspectoVisual() {
                             </Grid>
                             <Grid item xs={12}>
                                 <Box mt={5}>
-                                    <Paper elevation={3} style={{ padding: '10px' }}>
+                                    <Paper elevation={3} className={classes.paper}>
                                         <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 5</Typography>
                                         <RadioGroup
                                             row
@@ -127,7 +129,7 @@ function AspectoVisual() {
                             </Grid>
                             <Grid item xs={12}>
                                 <Box mt={5}>
-                                    <Paper elevation={3} style={{ padding: '10px' }}>
+                                    <Paper elevation={3} className={classes.paper}>
                                         <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 6</Typography>
                                         <RadioGroup
                                             row
@@ -144,7 +146,7 @@ function AspectoVisual() {
                             </Grid>
                             <Grid item xs={12}>
                                 <Box mt={5}>
-                                    <Paper elevation={3} style={{ padding: '10px' }}>
+                                    <Paper elevation={3} className={classes.paper}>
                                         <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 7</Typography>
                                         <RadioGroup
                                             row
@@ -160,7 +162,7 @@ function AspectoVisual() {
                                 </Box>
                             </Grid><Grid item xs={12}>
                                 <Box mt={5}>
-                                    <Paper elevation={3} style={{ padding: '10px' }}>
+                                    <Paper elevation={3} className={classes.paper}>
                                         <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 8</Typography>
                                         <RadioGroup
                                             row
@@ -176,7 +178,7 @@ function AspectoVisual() {
                                 </Box>
                             </Grid><Grid item xs={12}>
                                 <Box mt={5}>
-                                    <Paper elevation={3} style={{ padding: '10px' }}>
+                                    <Paper elevation={3} className={classes.paper}>
                                         <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 9</Typography>
                                         <RadioGroup
                                             row
@@ -193,7 +195,7 @@ function AspectoVisual() {
                             </Grid>
                             <Grid item xs={12}>
                                 <Box mt={5}>
-                                    <Paper elevation={3} style={{ padding: '10px' }}>
+                                    <Paper elevation={3} className={classes.paper}>
                                         <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 10</Typography>
                                         <RadioGroup
                                             row
@@ -224,7 +226,7 @@ function AspectoVisual() {
                                 <>
                                     <Grid item xs={12}>
                                         <Box mt={2}>
-                                            <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Paper elevation={3} className={classes.paper}>
                                                 <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 1</Typography>
                                                 <RadioGroup
                                                     row
@@ -240,7 +242,7 @@ function AspectoVisual() {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Box mt={5}>
-                                            <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Paper elevation={3} className={classes.paper}>
                                                 <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 2</Typography>
                                                 <RadioGroup
                                                     row
@@ -257,7 +259,7 @@ function AspectoVisual() {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Box mt={5}>
-                                            <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Paper elevation={3} className={classes.paper}>
                                                 <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 3</Typography>
                                                 <RadioGroup
                                                     row
@@ -274,7 +276,7 @@ function AspectoVisual() {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Box mt={5}>
-                                            <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Paper elevation={3} className={classes.paper}>
                                                 <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 4</Typography>
                                                 <RadioGroup
                                                     row
@@ -291,7 +293,7 @@ function AspectoVisual() {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Box mt={5}>
-                                            <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Paper elevation={3} className={classes.paper}>
                                                 <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 5</Typography>
                                                 <RadioGroup
                                                     row
@@ -308,7 +310,7 @@ function AspectoVisual() {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Box mt={5}>
-                                            <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Paper elevation={3} className={classes.paper}>
                                                 <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 6</Typography>
                                                 <RadioGroup
                                                     row
@@ -325,7 +327,7 @@ function AspectoVisual() {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Box mt={5}>
-                                            <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Paper elevation={3} className={classes.paper}>
                                                 <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 7</Typography>
                                                 <RadioGroup
                                                     row
@@ -342,7 +344,7 @@ function AspectoVisual() {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Box mt={5}>
-                                            <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Paper elevation={3} className={classes.paper}>
                                                 <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 8</Typography>
                                                 <RadioGroup
                                                     row
@@ -362,7 +364,7 @@ function AspectoVisual() {
                                 <>
                                     <Grid item xs={12}>
                                         <Box mt={2}>
-                                            <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Paper elevation={3} className={classes.paper}>
                                                 <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 1</Typography>
                                                 <RadioGroup
                                                     row
@@ -378,7 +380,7 @@ function AspectoVisual() {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Box mt={5}>
-                                            <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Paper elevation={3} className={classes.paper}>
                                                 <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 2</Typography>
                                                 <RadioGroup
                                                     row
@@ -395,7 +397,7 @@ function AspectoVisual() {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Box mt={5}>
-                                            <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Paper elevation={3} className={classes.paper}>
                                                 <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 3</Typography>
                                                 <RadioGroup
                                                     row
@@ -412,7 +414,7 @@ function AspectoVisual() {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Box mt={5}>
-                                            <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Paper elevation={3} className={classes.paper}>
                                                 <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 4</Typography>
                                                 <RadioGroup
                                                     row
@@ -429,7 +431,7 @@ function AspectoVisual() {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Box mt={5}>
-                                            <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Paper elevation={3} className={classes.paper}>
                                                 <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 5</Typography>
                                                 <RadioGroup
                                                     row
@@ -446,7 +448,7 @@ function AspectoVisual() {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Box mt={5}>
-                                            <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Paper elevation={3} className={classes.paper}>
                                                 <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 6</Typography>
                                                 <RadioGroup
                                                     row
@@ -463,7 +465,7 @@ function AspectoVisual() {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Box mt={5}>
-                                            <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Paper elevation={3} className={classes.paper}>
                                                 <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 7</Typography>
                                                 <RadioGroup
                                                     row
@@ -480,7 +482,7 @@ function AspectoVisual() {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Box mt={5}>
-                                            <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Paper elevation={3} className={classes.paper}>
                                                 <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 8</Typography>
                                                 <RadioGroup
                                                     row
@@ -497,7 +499,7 @@ function AspectoVisual() {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Box mt={5}>
-                                            <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Paper elevation={3} className={classes.paper}>
                                                 <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 9</Typography>
                                                 <RadioGroup
                                                     row
@@ -514,7 +516,7 @@ function AspectoVisual() {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Box mt={5}>
-                                            <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Paper elevation={3} className={classes.paper}>
                                                 <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 10</Typography>
                                                 <RadioGroup
                                                     row
@@ -531,7 +533,7 @@ function AspectoVisual() {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Box mt={5}>
-                                            <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Paper elevation={3} className={classes.paper}>
                                                 <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 11</Typography>
                                                 <RadioGroup
                                                     row
@@ -548,7 +550,7 @@ function AspectoVisual() {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Box mt={5}>
-                                            <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Paper elevation={3} className={classes.paper}>
                                                 <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 12</Typography>
                                                 <RadioGroup
                                                     row
@@ -565,7 +567,7 @@ function AspectoVisual() {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Box mt={5}>
-                                            <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Paper elevation={3} className={classes.paper}>
                                                 <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 13</Typography>
                                                 <RadioGroup
                                                     row
@@ -582,7 +584,7 @@ function AspectoVisual() {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Box mt={5}>
-                                            <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Paper elevation={3} className={classes.paper}>
                                                 <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 14</Typography>
                                                 <RadioGroup
                                                     row
@@ -599,7 +601,7 @@ function AspectoVisual() {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Box mt={5}>
-                                            <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Paper elevation={3} className={classes.paper}>
                                                 <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 15</Typography>
                                                 <RadioGroup
                                                     row
@@ -616,7 +618,7 @@ function AspectoVisual() {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Box mt={5}>
-                                            <Paper elevation={3} style={{ padding: '10px' }}>
+                                            <Paper elevation={3} className={classes.paper}>
                                                 <Typography variant="h6" style={{ fontWeight: 'bold' }}>Molde 16</Typography>
                                                 <RadioGroup
                                                     row

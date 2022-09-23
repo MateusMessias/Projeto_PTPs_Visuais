@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Box, FormControlLabel, Grid, Radio, RadioGroup } from "@mui/material";
 import AspectoVisual from "../../components/AspectoVisual";
-import Menu from "../../components/Menu";
-
 
 function Sopro() {
 
@@ -11,7 +9,6 @@ function Sopro() {
     
     return (
         <>  
-            <Menu/>
             <Grid item sm={12} xs={12} display='flex' justifyContent={'center'}>
                 <Box mt={40}>
                     <RadioGroup row defaultValue={services} onChange={(e) => setServices(e.target.value)}>

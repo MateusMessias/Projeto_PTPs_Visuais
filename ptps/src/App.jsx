@@ -13,7 +13,7 @@ function App() {
     return (
         <ThemeProvider theme={theme}>
         <div className="app">
-            <Grid container justifyContent="center">
+            <Grid container justifyContent="center" spacing={4}>
                 <Routes />
             </Grid>
         </div>

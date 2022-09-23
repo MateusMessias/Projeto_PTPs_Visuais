@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
-import { Box, Button, Checkbox, FormControlLabel, Grid, Paper, Radio, 
+import { Box, Button, FormControlLabel, Grid, Paper, Radio, 
     RadioGroup, Typography 
 } from "@mui/material";
-import Menu from "../../components/Menu";
 
 function Rotuladora() {
 
@@ -28,8 +27,7 @@ function Rotuladora() {
 
     return (
         <>
-            <Menu/>
-            <Grid item sm={12} xs={12} display='flex' justifyContent={'center'}>
+                <Grid item sm={12} xs={12} display='flex' justifyContent={'center'}>
                     <Box mt={45}>
                         <RadioGroup row defaultValue={linha} onChange={(e) => setLinha(e.target.value)}>
                             <FormControlLabel value={linha && '561'} control={<Radio />} label="Linha 561" />
