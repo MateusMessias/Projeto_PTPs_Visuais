@@ -31,8 +31,8 @@ function AspectoVisual() {
         const response = fetch('127.0.0.1/Rotuladora', {
             body: JSON.stringify(body)
         })
-        
-        console.log('Dados', body)
+
+        console.log('Dados', body, response)
     }
 
     return (
