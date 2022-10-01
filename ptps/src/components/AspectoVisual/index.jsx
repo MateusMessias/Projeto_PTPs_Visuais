@@ -22,10 +22,16 @@ function AspectoVisual() {
     };
 
     const onSubmit = (data) => {
+
         const body = {
             linha,
             ...data,
         }
+
+        const response = fetch('127.0.0.1/Rotuladora', {
+            body: JSON.stringify(body)
+        })
+        
         console.log('Dados', body)
     }
 
