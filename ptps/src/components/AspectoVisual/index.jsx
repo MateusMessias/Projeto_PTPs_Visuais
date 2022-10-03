@@ -32,7 +32,13 @@ function AspectoVisual() {
             body: JSON.stringify(body)
         })
 
-        console.log('Dados', body, response)
+        if(response.status === 200) {
+            //mensagem sucesso
+            console.log('Sucesso')
+        } else {
+            //mensagem de erro
+            console.log('Erro')
+        }
     }
 
     return (
