@@ -28,7 +28,7 @@ function AspectoVisual() {
             ...data,
         }
 
-        const response = fetch('127.0.0.1/Rotuladora', {
+        const response = fetch('http://127.0.0.1:8086/rotuladoras_add', {
             body: JSON.stringify(body)
         })
 
