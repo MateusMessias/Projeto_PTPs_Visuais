@@ -13,7 +13,7 @@ function Home() {
                 </Box>
                 <Box mt={5} mb={2} display='flex' justifyContent='center'> 
                     <Typography variant="h5">
-                        Selecione o serviço que deseja utilizar
+                        Selecione o serviço que deseja coletar
                     </Typography>
                 </Box>
             </Grid>

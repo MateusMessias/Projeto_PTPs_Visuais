@@ -163,6 +163,7 @@ function Peso() {
                                                 >
                                                     <MenuItem value={'ok'}>OK</MenuItem>
                                                     <MenuItem value={'nãoOk'}>Não OK</MenuItem>
+                                                    <MenuItem value={'0'}>Ignorar</MenuItem>
                                                 </Select>
                                             </FormControl>
                                         </Box>
