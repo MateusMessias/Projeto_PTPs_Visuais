@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Box, FormControlLabel, Grid, Radio, RadioGroup } from "@mui/material";
 import AspectoVisual from "../../components/AspectoVisual";
+import Peso from "../../components/Peso"
 
 function Sopro() {
 
@@ -21,6 +22,7 @@ function Sopro() {
             </Grid>  
            
             { services === 'aspectoVisual' &&  <AspectoVisual />}
+            { services === 'peso' &&  <Peso />}
            
         </>
     )

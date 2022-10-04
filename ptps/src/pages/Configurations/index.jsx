@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { Box, Button, FormControlLabel, Grid, Paper, Radio, RadioGroup, TextField, Typography } from "@mui/material";
 
-//Images
-import LogoTech from '../../images/Arquivos Logo TechCN/V04_DERIVACAO_COLORIDA+PRETO.png';
-
 function Configurations() {
 
     const methods = useForm();
@@ -12,19 +9,17 @@ function Configurations() {
     const { register, handleSubmit } = methods;
 
     const [tipoPTP, setTipoPTP] = useState('Sopro');
+    const [qtdRotuladora, setQtdRotuladora] = useState('1');
 
     const onSubmit = (data) => {
     
-        console.log('Dados')
+        console.log('Dados', data)
     }
 
     return (
         <>
-            <Box display='flex'>
-                <img src={LogoTech} alt="Logo Tech" style={{ width: '15%' }}/>
-            </Box>
             <Grid item sm={12} xs={12} display='flex' justifyContent={'center'}>
-                <Box mt={2} mb={2}>
+                <Box mt={40} mb={2}>
                     <Typography variant="h2">
                         Configurações
                     </Typography>
@@ -45,10 +40,18 @@ function Configurations() {
                                         <FormControlLabel value={tipoPTP && 'Rotuladora'} control={<Radio />} label="Rotuladora" />
                                     </RadioGroup>
                                 </Box>
-                                {tipoPTP === 'Sopro' && 
+                                {tipoPTP === 'Sopro' ?
                                     <Box mt={2}>
                                         <TextField id="outlined-basic" label="Número de moldes" variant="outlined"/>
                                     </Box>
+                                : 
+                                <Box mt={2}>
+                                    <Typography variant="h6" style={{ fontWeight: 'bold' }}>Quantidade de Rotuladoras</Typography>
+                                    <RadioGroup row defaultValue={qtdRotuladora} onChange={(e) => setQtdRotuladora(e.target.value)}>
+                                        <FormControlLabel value={qtdRotuladora && '1'} control={<Radio />} label="1 Rotuladora" />
+                                        <FormControlLabel value={qtdRotuladora && '2'} control={<Radio />} label="2 Rotuladoras" />
+                                    </RadioGroup>
+                                </Box>
                                 }
                             </Paper>
                         </Box>
