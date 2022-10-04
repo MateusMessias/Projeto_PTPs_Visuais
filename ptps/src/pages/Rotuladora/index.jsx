@@ -18,11 +18,23 @@ function Rotuladora() {
     };
 
     const onSubmit = (data) => {
+
         const body = {
             linha,
             ...data,
         }
-        console.log('Dados', body)
+
+        const response = fetch('http://127.0.0.1:8086/rotuladoras_add', {
+            body: JSON.stringify(body)
+        })
+
+        if(response.status === 200) {
+            //mensagem sucesso
+            console.log('Sucesso')
+        } else {
+            //mensagem de erro
+            console.log('Erro')
+        }
     }
 
     return (

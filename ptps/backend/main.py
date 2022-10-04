@@ -6,35 +6,35 @@ from pydantic import BaseModel
 app = FastAPI()
 
 class Rotuladora(BaseModel):
-    linha: int
-    garrafa_1: int
-    garrafa_2: int
-    garrafa_3: int
-    garrafa_4: int
-    codificacao: int
+    linha: str
+    garrafa_1: str
+    garrafa_2: str
+    garrafa_3: str
+    garrafa_4: str
+    codificacao: str
 
 class Aspecto_Visual(BaseModel):
-    linha: int
-    molde_1: int
-    molde_2: int
-    molde_3: int
-    molde_4: int
-    molde_5: int
-    molde_6: int
-    molde_7: int
-    molde_8: int
-    molde_9: int
-    molde_10: int
-    molde_11: int
-    molde_12: int
-    molde_13: int
-    molde_14: int
-    molde_15: int
-    molde_16: int
+    linha: str
+    molde_1: str
+    molde_2: str
+    molde_3: str
+    molde_4: str
+    molde_5: str
+    molde_6: str
+    molde_7: str
+    molde_8: str
+    molde_9: str
+    molde_10: str
+    molde_11: str
+    molde_12: str
+    molde_13: str
+    molde_14: str
+    molde_15: str
+    molde_16: str
 
 class Espessura(BaseModel):
-    linha: int
-    molde: int
+    linha: str
+    molde: str
     espessura_zona: float
     ombro_1: float
     ombro_2: float
@@ -50,22 +50,22 @@ class Espessura(BaseModel):
     injecao_2: float
 
 class Explosao_Partida(BaseModel):
-    linha: int
-    molde: int
+    linha: str
+    molde: str
     pressao: float
     porcentagem: float
 
 
 class Explosao_Hora(BaseModel):
-    linha: int
-    molde: int
+    linha: str
+    molde: str
     pressao: float
     porcentagem: float
     peso_base: float
 
 class Peso(BaseModel):
-    linha: int
-    molde: int
+    linha: str
+    molde: str
     peso_ombro: float
     peso_corpo: float
     peso_base: float
